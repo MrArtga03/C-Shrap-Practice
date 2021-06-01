@@ -27,17 +27,21 @@ namespace LauncherForUsers
 
         private void Button_Ready_Click(object sender, RoutedEventArgs e)
         {
+            //"Данные реального пользователя"
+            string RealUserLogin = "Ruslan228";
+            string RealUserPassword = "n5ugXbPN";
+
             string Login = TextBoxLogin.Text;
             string Password = passBox.Password;
 
             if (Login.Length < 5)
             {
-                TextBoxLogin.ToolTip = "Длина логина должна быть не менее 5 символов";
+                TextBoxLogin.ToolTip = "Длина логина должна быть не менее 5 символов!";
                 TextBoxLogin.Background = Brushes.Red;
             }
             else if (Password.Length < 5)
             {
-                passBox.ToolTip = "Длина пароля должна быть не менее 5 символов";
+                passBox.ToolTip = "Длина пароля должна быть не менее 5 символов!";
                 passBox.Background = Brushes.Red;
             }
             else
@@ -47,6 +51,34 @@ namespace LauncherForUsers
 
                 passBox.ToolTip = "";
                 passBox.Background = Brushes.Transparent;
+            }
+
+            //Верный ввод "Данные реального пользователя"
+            if (Login == RealUserLogin && Password == RealUserPassword)
+            {
+                UserAccount account = new UserAccount();
+                account.TextBlock4.Text = "Фамилия: Лобанов";
+                account.TextBlock3.Text = "Имя: Леви";
+                account.TextBlock5.Text = "Отчество: Левак";
+                account.TextBlock6.Text = "Пол: Мужской";
+                account.TextBlock7.Text = "Дата рождения: 1.04.2000";
+                account.TextBlock8.Text = "Email: russiAoneLove2000@gmail.com";
+                account.TextBlock9.Text = "Группа: 10-1П9";
+                account.TextBlock10.Text = Guid.NewGuid().ToString();
+
+                account.Show();
+                this.Hide();
+            }
+            //Не верный ввод "Данные реального пользователя"
+            else if (Login != RealUserLogin) 
+            {
+                TextBoxLogin.Background = Brushes.Red;
+                TextBoxLogin.ToolTip = "Неверно набран логин или такого не существует!";
+            }
+            else if (Password != RealUserPassword)
+            {
+                passBox.Background = Brushes.Red;
+                passBox.ToolTip = "Неверный пароль!";
             }
         }
 
@@ -65,6 +97,10 @@ namespace LauncherForUsers
             TextLogin.Text = "Enter your login";
             TextPassword.Text = "Enter your Password";
             ReadyBtn.Content = "Ready";
+            //TextBoxLogin.ToolTip = "Login length must be at least 5 characters!";
+            //passBox.ToolTip = "Password must be at least 5 characters long!";
+            //TextBoxLogin.ToolTip = "Login is incorrect or does not exist!";
+            //passBox.ToolTip = "Invalid password!";
         }
 
         private void Button_Rus_Click(object sender, RoutedEventArgs e)
@@ -74,6 +110,10 @@ namespace LauncherForUsers
             TextLogin.Text = "Введите ваш логин";
             TextPassword.Text = "Введите ваш пароль";
             ReadyBtn.Content = "Готово";
+            //TextBoxLogin.ToolTip = "Длина логина должна быть не менее 5 символов!";
+            //passBox.ToolTip = "Длина пароля должна быть не менее 5 символов!";
+            //TextBoxLogin.ToolTip = "Неверно набран логин или такого не существует!";
+            //passBox.ToolTip = "Неверный пароль!";
         }
     }
 }

@@ -17,9 +17,9 @@
                 <TextBlock Name="MainTitle" Text="Регистрация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
 
                 <Grid Margin="0 0 0 20">
-                    <Button Name="AuthBtn" HorizontalAlignment="Left" Content="Авторизация" FontSize="15" Click="Button_Click" Width="108"/>
-                    <Button HorizontalAlignment="Right" Content="Русский" FontSize="15" Width="101" Click="Button_Rus_Click"/>
-                    <Button HorizontalAlignment="Right" Content="Английский" FontSize="15" Width="101" Margin="0,0,124,0" Click="Button_Eng_Click"/>
+                    <Button Name="AuthBtn" HorizontalAlignment="Left" Background="Purple" Foreground="White" Content="Авторизация" FontSize="15" Click="Button_Click" Width="108"/>
+                    <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Русский" FontSize="15" Width="101" Click="Button_Rus_Click"/>
+                    <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Английский" FontSize="15" Width="101" Margin="0,0,124,0" Click="Button_Eng_Click"/>
                 </Grid>
 
                 <!--Данные о пользователе-->
@@ -52,7 +52,6 @@
 
                 <Grid Margin="0 0 0 0">
                     <ComboBox Name="DataBorInfo" Width="40" HorizontalAlignment="Left">
-                        <TextBlock></TextBlock>
                         <TextBlock>1</TextBlock>
                         <TextBlock>2</TextBlock>
                         <TextBlock>3</TextBlock>
@@ -164,7 +163,7 @@
                 <TextBlock Name="Email" FontSize="15">Почта</TextBlock>
                 <TextBox Name="Email1" FontSize="15"/>
 
-                <Button Name="RegBtn" Content="Готово" FontSize="15" Click="RegBtn_Click"/>
+                <Button Name="RegBtn" Background="Purple" Foreground="White" Content="Готово" FontSize="15" Click="RegBtn_Click"/>
             </StackPanel>
         </Border>
     </Grid>

@@ -19,7 +19,7 @@
 
             <StackPanel>
                 <Grid>
-                    <TextBlock Name="TextBlock1" Text="Кабинет пользователя" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                    <TextBlock Name="TextBlock1" TextAlignment="Center" Background="Purple" Foreground="White" Text="Кабинет пользователя" FontSize="30" Margin="0 0 0 20" FontWeight="Bold" FontFamily="Candara"/>
                 </Grid>
                 <TextBlock x:Name="TextBlock2" Text="Личная информация" FontSize="18.5" FontWeight="Bold"/>
                 <TextBlock Name="TextBlock4" Text="Фамилия: " FontSize="17"/>

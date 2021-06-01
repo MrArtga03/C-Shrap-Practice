@@ -17,9 +17,9 @@
                 <TextBlock Name="MainTitle" Text="Регистрация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
 
                 <Grid Margin="0 0 0 20">
-                    <Button Name="AuthBtn" HorizontalAlignment="Left" Content="Авторизация" FontSize="15" Click="Button_BackTo_Auth_Click" Width="108"/>
-                    <Button HorizontalAlignment="Right" Content="Русский" FontSize="15" Width="101" Click="Button_Rus_Click"/>
-                    <Button HorizontalAlignment="Right" Content="Английский" FontSize="15" Width="101" Margin="0,0,124,0" Height="24" VerticalAlignment="Top" Click="Button_Eng_Click"/>
+                    <Button Name="AuthBtn" HorizontalAlignment="Left" Background="Purple" Foreground="White" Content="Авторизация" FontSize="15" Click="Button_BackTo_Auth_Click" Width="108"/>
+                    <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Русский" FontSize="15" Width="101" Click="Button_Rus_Click"/>
+                    <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Английский" FontSize="15" Width="101" Margin="0,0,124,0" Height="24" VerticalAlignment="Top" Click="Button_Eng_Click"/>
                 </Grid>
 
                 <TextBlock Name="TextLogin" FontSize="15">Введите ваш логин</TextBlock>
@@ -30,7 +30,7 @@
                 <PasswordBox x:Name="passBox" Cursor="IBeam"/>
                 <TextBlock Name="TextPasswordRep" FontSize="15">Повторно введите ваш пароль</TextBlock>
                 <PasswordBox x:Name="passBox_2" Cursor="IBeam"/>
-                <Button Name="BtnReady" Content="Готово" Margin="0 20" FontSize="15" Click="Button_Reg_Click"/>
+                <Button Name="BtnReady" Background="Purple" Foreground="White" Content="Готово" Margin="0 20" FontSize="15" Click="Button_Reg_Click"/>
             </StackPanel>
         </Border>
     </Grid>
