@@ -14,15 +14,13 @@ using System.Windows.Shapes;
 
 namespace LauncherForUsers
 {
-    /// <summary>
-    /// Логика взаимодействия для AddInfo.xaml
-    /// </summary>
     public partial class AddInfo : Window
     {
         public AddInfo()
         {
             InitializeComponent();
         }
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -41,7 +39,6 @@ namespace LauncherForUsers
             account.TextBlock5.Text = "Отчество: " + Pat1.Text;
             account.TextBlock6.Text = "Пол: " + Gender.Text;
             account.TextBlock7.Text = $"Дата рождения: {DataBorInfo.Text}.{MonthBorInfo.Text}.{YearBorInfo.Text}";
-            //account.TextBlock8.Text = $"Email: {check.TextBoxEmail.Text}";
             account.TextBlock8.Text = $"Email: " + Email1.Text;
             account.TextBlock9.Text = "Группа: " + Group1.Text;
             account.TextBlock10.Text = "IP: " + Guid.NewGuid();
@@ -87,10 +84,6 @@ namespace LauncherForUsers
                 YearBorInfo.Background = Brushes.Transparent;
                 Group.Background = Brushes.Transparent;
 
-                //AddInfo info = new AddInfo();
-                //account.UserNameText.Text = info.LoginPlace.Text;
-                //account.TextBlock8.Text = "Email: " + info.EmailPlace.Text;
-
                 account.Show();
                 this.Hide();
             }
@@ -110,6 +103,7 @@ namespace LauncherForUsers
             TextYear.Text = "Year";
             Group.Text = "Group";
             RegBtn.Content = "Ready";
+            Email.Text = "Email";
         }
 
         private void Button_Rus_Click(object sender, RoutedEventArgs e)
@@ -126,6 +120,27 @@ namespace LauncherForUsers
             TextYear.Text = "Год";
             Group.Text = "Группа";
             RegBtn.Content = "Готов";
+            Email.Text = "Почта";
+        }
+
+        //Смена темы
+        private void RadioButton_Dark_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton radioButton = (RadioButton)sender;
+            var brush = new SolidColorBrush(Color.FromArgb(255, (byte)34, (byte)34, (byte)38));
+            if (radioButton.IsChecked == true)
+            {
+                Grid1.Background = brush;
+            }
+        }
+
+        private void RadioButton_White_Checked_1(object sender, RoutedEventArgs e)
+        {
+            RadioButton radioButton = (RadioButton)sender;
+            if (radioButton.IsChecked == true)
+            {
+                Grid1.Background = Brushes.White;
+            }
         }
     }
 }

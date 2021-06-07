@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LauncherForUsers"
         mc:Ignorable="d"
+        Icon="emoticon_emoji_man_indifferent_icon_187634 (2).ico"
         WindowState="Maximized"
         Title="UserAccount" Height="1080" Width="1920">
-    <Grid>
+    <Grid Name="Grid1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="127*"/>
             <ColumnDefinition Width="87*"/>
@@ -20,16 +21,32 @@
             <StackPanel>
                 <Grid>
                     <TextBlock Name="TextBlock1" TextAlignment="Center" Background="Purple" Foreground="White" Text="Кабинет пользователя" FontSize="30" Margin="0 0 0 20" FontWeight="Bold" FontFamily="Candara"/>
+                    <RadioButton Content="Dark" Foreground="White" HorizontalAlignment="Left" Margin="431,20,0,0" VerticalAlignment="Top" Checked="RadioButton_Dark_Checked"/>
+                    <RadioButton Content="White" Foreground="White" HorizontalAlignment="Left" Margin="480,20,0,0" VerticalAlignment="Top" Checked="RadioButton_White_Checked_1"/>
                 </Grid>
-                <TextBlock x:Name="TextBlock2" Text="Личная информация" FontSize="18.5" FontWeight="Bold"/>
-                <TextBlock Name="TextBlock4" Text="Фамилия: " FontSize="17"/>
-                <TextBlock Name="TextBlock3" Text="Имя: " FontSize="17"/>
-                <TextBlock Name="TextBlock5" Text="Отчество: " FontSize="17"/>
-                <TextBlock Name="TextBlock6" Text="Пол: " FontSize="17"/>
-                <TextBlock Name="TextBlock7" Text="Дата рождения: " FontSize="17"/>
-                <TextBlock Name="TextBlock8" Text="Email: " FontSize="17"/>
-                <TextBlock Name="TextBlock9" Text="Группа: " FontSize="17"/>
-                <TextBlock Name="TextBlock10" Text="IP: " FontSize="17"/>
+
+                <Grid>
+                    <TextBlock x:Name="TextBlock2" Text="Личная информация" FontSize="22" FontWeight="Bold"/>
+                    <Image Name="Image1" Stretch="UniformToFill" HorizontalAlignment="Left" Height="170" Margin="353,0,0,-143" VerticalAlignment="Top" Width="177" Source="unnamed.png"/>
+                </Grid>
+
+                <TextBlock Name="TextBlock4" Text="Фамилия: " FontSize="18" TextDecorations="Underline"/>
+                <TextBlock Name="TextBlock3" Text="Имя: " FontSize="18" TextDecorations="Underline"/>
+                <TextBlock Name="TextBlock5" Text="Отчество: " FontSize="18" TextDecorations="Underline"/>
+                <TextBlock Name="TextBlock6" Text="Пол: " FontSize="18" TextDecorations="Underline"/>
+                <TextBlock x:Name="TextBlock7" FontSize="18" TextDecorations="Underline"><Run Text="Дата рождения: "/></TextBlock>
+                <TextBlock Name="TextBlock8" Text="Email: " FontSize="18" TextDecorations="Underline"/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="479*"/>
+                        <ColumnDefinition Width="61*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Name="TextBlock9" Text="Группа: " FontSize="18" TextDecorations="Underline" Grid.ColumnSpan="2"/>
+                    <Button Content="Выбор фото" HorizontalAlignment="Left" Padding="7" Background="Purple" Foreground="White" Margin="386,10,0,-21" VerticalAlignment="Top" Width="107" Height="35" Click="Button_Click" FontSize="15" Grid.ColumnSpan="2"/>
+                </Grid>
+
+                <TextBlock Name="TextBlock10" Text="IP: " FontSize="18" TextDecorations="Underline"/>
             </StackPanel>
         </Border>
     </Grid>

@@ -1,0 +1,60 @@
+﻿<Window x:Class="LauncherForUsers.Termsofuse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LauncherForUsers"
+        mc:Ignorable="d"
+        Icon="report_document_finance_business_analysis_analytics_chart_icon_188615.ico"
+        Title="Terms of use" Height="450" Width="800">
+    <Grid Background="#ffdadada">
+        <StackPanel>
+            <TextBlock TextDecorations="Underline" FontWeight="Bold">1.Общие условия</TextBlock>
+            
+            <TextBlock TextWrapping="Wrap">
+                1.1. Использование материалов и сервисов регулируется нормами действующего законодательства Российской Федерации.
+            </TextBlock>
+
+            <TextBlock TextWrapping="Wrap">
+                1.2. Настоящее Соглашение является публичной офертой. Получая доступ к материалам Сайта Пользователь считается 
+                присоединившимся к настоящему Соглашению.
+            </TextBlock>
+
+            <TextBlock TextWrapping="Wrap">
+                1.3. Администрация вправе в любое время в одностороннем порядке изменять условия настоящего Соглашения. Такие изменения вступают в силу по истечении 3 (Трех) дней с момента размещения новой версии Соглашения. При несогласии Пользователя с внесенными 
+                изменениями он обязан отказаться от доступа, прекратить использование материалов и сервисов Сайта.
+            </TextBlock>
+
+            <TextBlock TextDecorations="Underline" FontWeight="Bold">2. Обязательства Пользователя</TextBlock>
+
+            <TextBlock TextWrapping="Wrap" TextDecorations="{x:Null}">
+                2.1. Пользователь соглашается не предпринимать действий, которые могут рассматриваться как нарушающие российское законодательство или нормы международного права,
+                в том числе в сфере интеллектуальной собственности, авторских и/или смежных правах, а также любых действий, которые приводят или могут привести к нарушению нормальной работы Сайта и сервисов Сайта.
+            </TextBlock>
+
+            <TextBlock TextWrapping="Wrap">
+                2.2. Использование материалов Сайта без согласия правообладателей не допускается (статья 1270 Г.К РФ). Для правомерного использования материалов 
+                Сайта необходимо заключение лицензионных договоров (получение лицензий) от Правообладателей.
+            </TextBlock>
+
+            <TextBlock TextWrapping="Wrap">
+                2.3. При цитировании материалов Сайта, включая охраняемые авторские произведения, ссылка на Сайт обязательна (подпункт 1 пункта 1 статьи 1274 Г.К РФ).
+            </TextBlock>
+
+            <TextBlock TextDecorations="Underline" FontWeight="Bold">3. Прочие условия</TextBlock>
+
+            <TextBlock TextWrapping="Wrap" TextDecorations="{x:Null}">
+               3.1. Все возможные споры, вытекающие из настоящего Соглашения или связанные с ним, подлежат разрешению в соответствии с действующим законодательством Российской Федерации.
+            </TextBlock>
+
+            <TextBlock TextWrapping="Wrap">
+                3.2. Ничто в Соглашении не может пониматься как установление между Пользователем и Администрации Сайта агентских отношений, отношений товарищества, отношений по совместной 
+                деятельности, отношений личного найма, либо каких-то иных отношений, прямо не предусмотренных Соглашением.
+            </TextBlock>
+
+            <TextBlock TextWrapping="Wrap">
+                3.3. Признание судом какого-либо положения Соглашения недействительным или не подлежащим принудительному исполнению не влечет недействительности иных положений Соглашения.
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

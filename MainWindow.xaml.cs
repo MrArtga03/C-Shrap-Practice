@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace LauncherForUsers
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -64,11 +61,16 @@ namespace LauncherForUsers
                 account.TextBlock7.Text = "Дата рождения: 1.04.2000";
                 account.TextBlock8.Text = "Email: russiAoneLove2000@gmail.com";
                 account.TextBlock9.Text = "Группа: 10-1П9";
-                account.TextBlock10.Text = Guid.NewGuid().ToString();
+                account.TextBlock10.Text = "IP: " + Guid.NewGuid().ToString();
+
+                //account.Image1.Source = "9y6aL1b_5aY.jpg";
+                account.Image1.Source = new BitmapImage(
+                    new Uri("C:\\Users\\Smuzi\\OneDrive\\Рабочий стол\\практика\\dont-look\\9y6aL1b_5aY.jpg"));
 
                 account.Show();
                 this.Hide();
             }
+
             //Не верный ввод "Данные реального пользователя"
             else if (Login != RealUserLogin) 
             {
@@ -97,10 +99,6 @@ namespace LauncherForUsers
             TextLogin.Text = "Enter your login";
             TextPassword.Text = "Enter your Password";
             ReadyBtn.Content = "Ready";
-            //TextBoxLogin.ToolTip = "Login length must be at least 5 characters!";
-            //passBox.ToolTip = "Password must be at least 5 characters long!";
-            //TextBoxLogin.ToolTip = "Login is incorrect or does not exist!";
-            //passBox.ToolTip = "Invalid password!";
         }
 
         private void Button_Rus_Click(object sender, RoutedEventArgs e)
@@ -110,10 +108,26 @@ namespace LauncherForUsers
             TextLogin.Text = "Введите ваш логин";
             TextPassword.Text = "Введите ваш пароль";
             ReadyBtn.Content = "Готово";
-            //TextBoxLogin.ToolTip = "Длина логина должна быть не менее 5 символов!";
-            //passBox.ToolTip = "Длина пароля должна быть не менее 5 символов!";
-            //TextBoxLogin.ToolTip = "Неверно набран логин или такого не существует!";
-            //passBox.ToolTip = "Неверный пароль!";
+        }
+
+        //Смена темы
+        private void RadioButton_Dark_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton radioButton = (RadioButton)sender;
+            var brush = new SolidColorBrush(Color.FromArgb(255, (byte)34, (byte)34, (byte)38));
+            if (radioButton.IsChecked == true)
+            {
+                Grid1.Background = brush;
+            }
+        }
+
+        private void RadioButton_White_Checked_1(object sender, RoutedEventArgs e)
+        {
+            RadioButton radioButton = (RadioButton)sender;
+            if (radioButton.IsChecked == true)
+            {
+                Grid1.Background = Brushes.White;
+            }
         }
     }
 }

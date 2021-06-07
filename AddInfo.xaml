@@ -5,19 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LauncherForUsers"
         mc:Ignorable="d"
+        Icon="emoticon_emoji_man_indifferent_icon_187634 (2).ico"
         WindowState="Maximized"
         Title="AddInfo" Height="1080" Width="1920">
-    <Grid>
+    <Grid Name="Grid1">
         <Border MinWidth="400" MaxWidth="600" Margin="15" Background="#fff" VerticalAlignment="Center" Padding="30" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="60" Color="LightGray" ShadowDepth="0"/>
             </Border.Effect>
 
             <StackPanel>
-                <TextBlock Name="MainTitle" Text="Регистрация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                <Grid>
+                    <TextBlock Name="MainTitle" Text="Регистрация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                    <RadioButton Content="Dark" HorizontalAlignment="Left" Margin="431,20,0,0" VerticalAlignment="Top" Checked="RadioButton_Dark_Checked"/>
+                    <RadioButton Content="White" HorizontalAlignment="Left" Margin="480,20,0,0" VerticalAlignment="Top" Checked="RadioButton_White_Checked_1"/>
+                </Grid>
 
                 <Grid Margin="0 0 0 20">
-                    <Button Name="AuthBtn" HorizontalAlignment="Left" Background="Purple" Foreground="White" Content="Авторизация" FontSize="15" Click="Button_Click" Width="108"/>
+                    <Button Name="AuthBtn" HorizontalAlignment="Left" Padding="7" Background="Purple" Foreground="White" Content="Авторизация" FontSize="15" Click="Button_Click" Width="108"/>
                     <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Русский" FontSize="15" Width="101" Click="Button_Rus_Click"/>
                     <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Английский" FontSize="15" Width="101" Margin="0,0,124,0" Click="Button_Eng_Click"/>
                 </Grid>
@@ -25,43 +30,41 @@
                 <!--Данные о пользователе-->
                 <TextBlock FontSize="15" FontWeight="Bold">Ваш логин:</TextBlock>
                 <TextBlock Name="LoginPlace" FontSize="15"></TextBlock>
-                <!--<TextBlock FontSize="15" FontWeight="Bold">Ваш Email:</TextBlock>
-                <TextBlock Name="EmailPlace" FontSize="15"></TextBlock>-->
                 <TextBlock Name="InfoText" Text="Введите дополнительные данные:" FontSize="20" FontWeight="Bold"/>
                 
-                <TextBlock Name="LastName" FontSize="15">Фамилия</TextBlock>
+                <TextBlock Name="LastName" FontSize="18">Фамилия</TextBlock>
                 <TextBox Name="LastName1" FontSize="15"/>
 
-                <TextBlock Name="Name" FontSize="15">Имя</TextBlock>
+                <TextBlock Name="Name" FontSize="18">Имя</TextBlock>
                 <TextBox Name="Name1" FontSize="15"/>
 
-                <TextBlock Name="Pat" FontSize="15">Отчество</TextBlock>
+                <TextBlock Name="Pat" FontSize="18">Отчество</TextBlock>
                 <TextBox Name="Pat1" FontSize="15"/>
                 
-                <TextBlock Name="GenderText" Text="Пол" FontSize="15"/>
+                <TextBlock Name="GenderText" Text="Пол" FontSize="18"/>
                 <ComboBox x:Name="Gender" Width="87" HorizontalAlignment="Left">
                     <TextBlock>Мужской</TextBlock>
                     <TextBlock>Женский</TextBlock>
                 </ComboBox>
 
                 <Grid>
-                    <TextBlock Name="TextNumber" Text="Число" FontSize="15" HorizontalAlignment="Left"/>
-                    <TextBlock Name="TextMonth" Text="Месяц" FontSize="15" HorizontalAlignment="Left" Margin="62,0,0,0" Width="117"/>
-                    <TextBlock Name="TextYear" Text="Год" FontSize="15" HorizontalAlignment="Left" Margin="202,0,0,0" Width="117"/>
+                    <TextBlock Name="TextNumber" Text="Число" FontSize="18" HorizontalAlignment="Left"/>
+                    <TextBlock Name="TextMonth" Text="Месяц" FontSize="18" HorizontalAlignment="Left" Margin="62,0,0,0" Width="117"/>
+                    <TextBlock Name="TextYear" Text="Год" FontSize="18" HorizontalAlignment="Left" Margin="202,0,0,0" Width="117"/>
                 </Grid>
 
                 <Grid Margin="0 0 0 0">
-                    <ComboBox Name="DataBorInfo" Width="40" HorizontalAlignment="Left">
-                        <TextBlock>1</TextBlock>
-                        <TextBlock>2</TextBlock>
-                        <TextBlock>3</TextBlock>
-                        <TextBlock>4</TextBlock>
-                        <TextBlock>4</TextBlock>
-                        <TextBlock>5</TextBlock>
-                        <TextBlock>6</TextBlock>
-                        <TextBlock>7</TextBlock>
-                        <TextBlock>8</TextBlock>
-                        <TextBlock>9</TextBlock>
+                    <ComboBox Name="DataBorInfo" Width="55" HorizontalAlignment="Left">
+                        <TextBlock>01</TextBlock>
+                        <TextBlock>02</TextBlock>
+                        <TextBlock>03</TextBlock>
+                        <TextBlock>04</TextBlock>
+                        <TextBlock>04</TextBlock>
+                        <TextBlock>05</TextBlock>
+                        <TextBlock>06</TextBlock>
+                        <TextBlock>07</TextBlock>
+                        <TextBlock>08</TextBlock>
+                        <TextBlock>09</TextBlock>
                         <TextBlock>10</TextBlock>
                         <TextBlock>11</TextBlock>
                         <TextBlock>12</TextBlock>
@@ -157,13 +160,13 @@
                     </ComboBox>
                 </Grid>
 
-                <TextBlock Name="Group" FontSize="15">Группа</TextBlock>
+                <TextBlock Name="Group" FontSize="18">Группа</TextBlock>
                 <TextBox Name="Group1" FontSize="15"/>
 
-                <TextBlock Name="Email" FontSize="15">Почта</TextBlock>
+                <TextBlock Name="Email" FontSize="18">Почта</TextBlock>
                 <TextBox Name="Email1" FontSize="15"/>
 
-                <Button Name="RegBtn" Background="Purple" Foreground="White" Content="Готово" FontSize="15" Click="RegBtn_Click"/>
+                <Button Name="RegBtn" Background="Purple" Padding="7" Foreground="White" Content="Готово" FontSize="15" Click="RegBtn_Click"/>
             </StackPanel>
         </Border>
     </Grid>

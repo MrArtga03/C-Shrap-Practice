@@ -6,28 +6,33 @@
         xmlns:local="clr-namespace:LauncherForUsers"
         mc:Ignorable="d"
         WindowState="Maximized"
-        Icon="emoticon_emoji_man_indifferent_thoughtful_icon_187633.ico"
+        Icon="emoticon_emoji_man_indifferent_icon_187634 (2).ico"
         Title="Launcher for users" Height="1080" Width="1920">
-    <Grid Background="#ffdadada">
+    <Grid Name="Grid1" Background="#ffdadada">
         <Border MinWidth="400" MaxWidth="600" Margin="15" Background="#fff" VerticalAlignment="Center" Padding="30" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="60" Color="LightGray" ShadowDepth="0"/>
             </Border.Effect>
 
             <StackPanel>
-                <TextBlock Name="MainTitle" Text="Авторизация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                <Grid>
+                    <TextBlock Name="MainTitle" Text="Авторизация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                    <RadioButton Content="Dark" HorizontalAlignment="Left" Margin="431,20,0,0" VerticalAlignment="Top" Checked="RadioButton_Dark_Checked"/>
+                    <RadioButton Content="White" HorizontalAlignment="Left" Margin="480,20,0,0" VerticalAlignment="Top" Checked="RadioButton_White_Checked_1"/>
+                </Grid>
 
                 <Grid Margin="0 0 0 20">
-                    
                     <Button Name="RegBtn" Padding="7" Background="Purple" Foreground="White" HorizontalAlignment="Left" Content="Регистрация" FontSize="15" Click="Button_Auth_Click" Width="108" FontFamily="Arial"/>
                     <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="English" FontSize="15" Width="101" Margin="0,0,124,0" Click="Button_Eng_Click"/>
                     <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Русский" FontSize="15" Width="101" Click="Button_Rus_Click"/>
                 </Grid>
 
-                <TextBlock Name="TextLogin" FontSize="15">Введите ваш логин</TextBlock>
-                <TextBox x:Name="TextBoxLogin"/>
-                <TextBlock Name="TextPassword" FontSize="15">Введите ваш пароль</TextBlock>
-                <PasswordBox Name="passBox" Cursor="IBeam"/>
+                <TextBlock Name="TextLogin" FontSize="18">Введите ваш логин</TextBlock>
+                <TextBox x:Name="TextBoxLogin" FontSize="16"/>
+
+                <TextBlock Name="TextPassword" FontSize="18">Введите ваш пароль</TextBlock>
+                <PasswordBox Name="passBox" Cursor="IBeam" FontSize="16"/>
+
                 <Button Name="ReadyBtn" Padding="5" Content="Готово" Background="Purple" Foreground="White" FontSize="15" Margin="0 20" Click="Button_Ready_Click"/>
             </StackPanel>
         </Border>

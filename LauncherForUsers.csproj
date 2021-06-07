@@ -61,6 +61,9 @@
     <Compile Include="CheckIn.xaml.cs">
       <DependentUpon>CheckIn.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Termsofuse.xaml.cs">
+      <DependentUpon>Termsofuse.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserAccount.xaml.cs">
       <DependentUpon>UserAccount.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="CheckIn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Termsofuse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -116,7 +123,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="emoticon_emoji_man_indifferent_thoughtful_icon_187633.ico" />
+    <Resource Include="report_document_finance_business_analysis_analytics_chart_icon_188615.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wallpaper-for-facebook-profile-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="9y6aL1b_5aY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="emoticon_emoji_man_indifferent_icon_187634 %282%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

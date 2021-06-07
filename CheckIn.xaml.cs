@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace LauncherForUsers
 {
-    /// <summary>
-    /// Логика взаимодействия для Регистрация.xaml
-    /// </summary>
     public partial class CheckIn : Window
     {
         public CheckIn()
@@ -24,11 +21,11 @@ namespace LauncherForUsers
             InitializeComponent();
         }
 
+
         private void Button_Reg_Click(object sender, RoutedEventArgs e)
         {
             //Получение данных введёных пользователем
             string Login = TextBoxLogin.Text;
-            //string Email = TextBoxEmail.Text;
             string Pass = passBox.Password;
             string Pass2 = passBox_2.Password;
 
@@ -50,11 +47,11 @@ namespace LauncherForUsers
                 passBox_2.ToolTip = "Пароль не совпадает!";
                 passBox_2.Background = Brushes.Red;
             }
-            //else if (Email.Length < 5 || !Email.Contains("@") || !Email.Contains("."))
-            //{
-            //    TextBoxEmail.ToolTip = "Не верно введена почта!";
-            //    TextBoxEmail.Background = Brushes.Red;
-            //}
+            else if (CheckBox.IsChecked == false)
+            {
+                TextFalse.Foreground = Brushes.Red;
+                TextFalse.ToolTip = "Примите соглашение!";
+            }
 
             //В случаи, если всё верно введено
             else
@@ -68,12 +65,10 @@ namespace LauncherForUsers
                 passBox_2.ToolTip = "";
                 passBox_2.Background = Brushes.Transparent;
 
-                //TextBoxEmail.ToolTip = "";
-                //TextBoxEmail.Background = Brushes.Transparent;
+                TextFalse.Foreground = Brushes.Black;
 
                 AddInfo info = new AddInfo();
                 info.LoginPlace.Text = Login;
-                //info.EmailPlace.Text = Email;
                 info.Show();
                 this.Hide();
             }
@@ -86,6 +81,13 @@ namespace LauncherForUsers
             this.Hide();
         }
 
+        //Пользовательское соглашение
+        private void ReadInfo_Click(object sender, RoutedEventArgs e)
+        {
+            Termsofuse termsofuse = new Termsofuse();
+            termsofuse.Show();
+        }
+
         //Смена языка
         private void Button_Eng_Click(object sender, RoutedEventArgs e)
         {
@@ -94,8 +96,9 @@ namespace LauncherForUsers
             TextLogin.Text = "Enter your login";
             TextPassword.Text = "Enter your Password";
             TextPasswordRep.Text = "Repeat your Password";
-            //TextEmail.Text = "Enter your Email";
             BtnReady.Content = "Ready";
+            TextFalse.Text = "Accept user agreement";
+            ReadInfo.Content = "Read";
         }
 
         private void Button_Rus_Click(object sender, RoutedEventArgs e)
@@ -105,8 +108,29 @@ namespace LauncherForUsers
             TextLogin.Text = "Введите ваш логин";
             TextPassword.Text = "Введите ваш пароль";
             TextPasswordRep.Text = "Повторно введите ваш пароль";
-            //TextEmail.Text = "Введите ваш Email";
             BtnReady.Content = "Готово";
+            TextFalse.Text = "Принять пользовательское соглашение";
+            ReadInfo.Content = "Читать";
+        }
+
+        //Смена темы
+        private void RadioButton_Dark_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton radioButton = (RadioButton)sender;
+            var brush = new SolidColorBrush(Color.FromArgb(255, (byte)34, (byte)34, (byte)38));
+            if (radioButton.IsChecked == true)
+            {
+                Grid1.Background = brush;
+            }
+        }
+
+        private void RadioButton_White_Checked_1(object sender, RoutedEventArgs e)
+        {
+            RadioButton radioButton = (RadioButton)sender;
+            if (radioButton.IsChecked == true)
+            {
+                Grid1.Background = Brushes.White;
+            }
         }
     }
 }

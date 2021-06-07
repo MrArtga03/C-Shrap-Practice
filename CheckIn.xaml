@@ -6,31 +6,43 @@
         xmlns:local="clr-namespace:LauncherForUsers"
         mc:Ignorable="d"
         WindowState="Maximized"
+        Icon="emoticon_emoji_man_indifferent_icon_187634 (2).ico"
         Title="Регистрация" Height="1080" Width="1920">
-    <Grid Background="#ffdadada">
+    <Grid Name="Grid1" Background="#ffdadada">
         <Border MinWidth="400" MaxWidth="600" Margin="15" Background="#fff" VerticalAlignment="Center" Padding="30" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="60" Color="LightGray" ShadowDepth="0"/>
             </Border.Effect>
 
             <StackPanel>
-                <TextBlock Name="MainTitle" Text="Регистрация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
-
-                <Grid Margin="0 0 0 20">
-                    <Button Name="AuthBtn" HorizontalAlignment="Left" Background="Purple" Foreground="White" Content="Авторизация" FontSize="15" Click="Button_BackTo_Auth_Click" Width="108"/>
-                    <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Русский" FontSize="15" Width="101" Click="Button_Rus_Click"/>
-                    <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Английский" FontSize="15" Width="101" Margin="0,0,124,0" Height="24" VerticalAlignment="Top" Click="Button_Eng_Click"/>
+                <Grid>
+                    <TextBlock Name="MainTitle" Text="Регистрация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                    <RadioButton Content="Dark" HorizontalAlignment="Left" Margin="431,20,0,0" VerticalAlignment="Top" Checked="RadioButton_Dark_Checked"/>
+                    <RadioButton Content="White" HorizontalAlignment="Left" Margin="480,20,0,0" VerticalAlignment="Top" Checked="RadioButton_White_Checked_1"/>
                 </Grid>
 
-                <TextBlock Name="TextLogin" FontSize="15">Введите ваш логин</TextBlock>
-                <TextBox x:Name="TextBoxLogin"/>
-                <!--<TextBlock Name="TextEmail" FontSize="15">Введите ваш email</TextBlock>
-                <TextBox Name="TextBoxEmail"/>-->
-                <TextBlock Name="TextPassword" FontSize="15">Введите ваш пароль</TextBlock>
-                <PasswordBox x:Name="passBox" Cursor="IBeam"/>
-                <TextBlock Name="TextPasswordRep" FontSize="15">Повторно введите ваш пароль</TextBlock>
-                <PasswordBox x:Name="passBox_2" Cursor="IBeam"/>
-                <Button Name="BtnReady" Background="Purple" Foreground="White" Content="Готово" Margin="0 20" FontSize="15" Click="Button_Reg_Click"/>
+                <Grid Margin="0 0 0 20">
+                    <Button Name="AuthBtn" HorizontalAlignment="Left" Padding="7" Background="Purple" Foreground="White" Content="Авторизация" FontSize="15" Click="Button_BackTo_Auth_Click" Width="108"/>
+                    <Button HorizontalAlignment="Right" Background="Purple" Padding="7" Foreground="White" Content="Русский" FontSize="15" Width="101" Click="Button_Rus_Click"/>
+                    <Button HorizontalAlignment="Right" Background="Purple" Foreground="White" Content="Английский" FontSize="15" Width="101" Margin="0,0,124,0" Height="36" VerticalAlignment="Top" Click="Button_Eng_Click"/>
+                </Grid>
+
+                <TextBlock Name="TextLogin" FontSize="18">Введите ваш логин</TextBlock>
+                <TextBox x:Name="TextBoxLogin" FontSize="16"/>
+                
+                <TextBlock Name="TextPassword" FontSize="18">Введите ваш пароль</TextBlock>
+                <PasswordBox x:Name="passBox" Cursor="IBeam" FontSize="16"/>
+                
+                <TextBlock Name="TextPasswordRep" FontSize="18">Повторно введите ваш пароль</TextBlock>
+                <PasswordBox x:Name="passBox_2" Cursor="IBeam" FontSize="16"/>
+                
+                <Grid Margin="0, 10, 3, 4">
+                    <CheckBox x:Name="CheckBox"/>
+                    <TextBlock Name="TextFalse" Margin="25,0,-25,0" TextDecorations="{x:Null}">Принять пользовательское соглашение</TextBlock>
+                    <Button Name="ReadInfo" Content="Читать" HorizontalAlignment="Right" BorderBrush="White" Background="White" Width="68" Margin="0,-2,222,2" FontStyle="Italic" Click="ReadInfo_Click"/>
+                </Grid>
+                
+                <Button Name="BtnReady" Background="Purple" Padding="7" Foreground="White" Content="Готово" Margin="0 20" FontSize="15" Click="Button_Reg_Click"/>
             </StackPanel>
         </Border>
     </Grid>
