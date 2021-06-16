@@ -45,18 +45,18 @@ namespace LauncherForUsers
 
             if (LastName1.Text.Length < 3)
             {
-                LastName.Background = Brushes.Red;
-                LastName.ToolTip = "Длина строки должна быть не менее 3 символов!";
+                LastName1.Background = Brushes.Red;
+                LastName1.ToolTip = "Длина строки должна быть не менее 3 символов!";
             }
             else if (Name1.Text.Length < 3)
             {
-                Name.Background = Brushes.Red;
-                Name.ToolTip = "Длина строки должна быть не менее 3 символов!";
+                Name1.Background = Brushes.Red;
+                Name1.ToolTip = "Длина строки должна быть не менее 3 символов!";
             }
             else if (Pat1.Text.Length < 3)
             {
-                Pat.Background = Brushes.Red;
-                Pat.ToolTip = "Длина строки должна быть не менее 3 символов!";
+                Pat1.Background = Brushes.Red;
+                Pat1.ToolTip = "Длина строки должна быть не менее 3 символов!";
             }
             else if (Gender.Text == "")
             {
@@ -73,16 +73,23 @@ namespace LauncherForUsers
                 Group.Background = Brushes.Red;
                 Group.ToolTip = "Длина строки должна быть не менее 3 символов!";
             }
+            else if (Email1.Text != "@" || Email1.Text != ".")
+            {
+                Email1.Background = Brushes.Red;
+                Email1.ToolTip = " Вы упустили символы '@' или '.' ";
+            }
             else
             {
-                Name.Background = Brushes.Transparent;
-                LastName.Background = Brushes.Transparent;
-                Pat.Background = Brushes.Transparent;
+                Name1.Background = Brushes.Transparent;
+                LastName1.Background = Brushes.Transparent;
+                Pat1.Background = Brushes.Transparent;
                 Gender.Background = Brushes.Transparent;
                 DataBorInfo.Background = Brushes.Transparent;
                 MonthBorInfo.Background = Brushes.Transparent;
                 YearBorInfo.Background = Brushes.Transparent;
                 Group.Background = Brushes.Transparent;
+                Email1.Background = Brushes.Transparent;
+                Email1.ToolTip = "";
 
                 account.Show();
                 this.Hide();
@@ -91,13 +98,16 @@ namespace LauncherForUsers
 
         private void Button_Eng_Click(object sender, RoutedEventArgs e)
         {
+            TextLogin.Text = "Your login:";
             MainTitle.Text = "Check in";
             AuthBtn.Content = "Authorization";
             InfoText.Text = "Enter additional details:";
             Name.Text = "Name";
             LastName.Text = "Last Name";
             Pat.Text = "Patronymic";
-            Gender.Text = "Gender";
+            Male.Text = "Male";
+            Female.Text = "Female";
+            GenderText.Text = "Gender";
             TextNumber.Text = "Number";
             TextMonth.Text = "Month";
             TextYear.Text = "Year";
@@ -108,13 +118,16 @@ namespace LauncherForUsers
 
         private void Button_Rus_Click(object sender, RoutedEventArgs e)
         {
+            TextLogin.Text = "Ваш логин:";
             MainTitle.Text = "Регистрация";
             AuthBtn.Content = "Авторизация";
             InfoText.Text = "Введите дополнительные данные:";
             Name.Text = "Имя";
             LastName.Text = "Фамилия";
             Pat.Text = "Отчества";
-            Gender.Text = "Пол";
+            Male.Text = "Мужской";
+            Female.Text = "Женский";
+            GenderText.Text = "Пол";
             TextNumber.Text = "Число";
             TextMonth.Text = "Месяц";
             TextYear.Text = "Год";

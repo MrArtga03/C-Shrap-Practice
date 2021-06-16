@@ -8,7 +8,7 @@
         WindowState="Maximized"
         Icon="emoticon_emoji_man_indifferent_icon_187634 (2).ico"
         Title="Launcher for users" Height="1080" Width="1920">
-    <Grid Name="Grid1" Background="#ffdadada">
+    <Grid Name="Grid1">
         <Border MinWidth="400" MaxWidth="600" Margin="15" Background="#fff" VerticalAlignment="Center" Padding="30" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="60" Color="LightGray" ShadowDepth="0"/>

@@ -1,0 +1,45 @@
+E:\УП\C-Shrap-Practice\bin\Release\LauncherForUsers.exe.config
+E:\УП\C-Shrap-Practice\bin\Release\LauncherForUsers.exe
+E:\УП\C-Shrap-Practice\bin\Release\LauncherForUsers.pdb
+E:\УП\C-Shrap-Practice\obj\Release\AddInfo.g.cs
+E:\УП\C-Shrap-Practice\obj\Release\MainWindow.g.cs
+E:\УП\C-Shrap-Practice\obj\Release\CheckIn.g.cs
+E:\УП\C-Shrap-Practice\obj\Release\Termsofuse.g.cs
+E:\УП\C-Shrap-Practice\obj\Release\UserAccount.g.cs
+E:\УП\C-Shrap-Practice\obj\Release\App.g.cs
+E:\УП\C-Shrap-Practice\obj\Release\LauncherForUsers_MarkupCompile.cache
+E:\УП\C-Shrap-Practice\obj\Release\LauncherForUsers_MarkupCompile.lref
+E:\УП\C-Shrap-Practice\obj\Release\AddInfo.baml
+E:\УП\C-Shrap-Practice\obj\Release\MainWindow.baml
+E:\УП\C-Shrap-Practice\obj\Release\CheckIn.baml
+E:\УП\C-Shrap-Practice\obj\Release\Termsofuse.baml
+E:\УП\C-Shrap-Practice\obj\Release\UserAccount.baml
+E:\УП\C-Shrap-Practice\obj\Release\LauncherForUsers.g.resources
+E:\УП\C-Shrap-Practice\obj\Release\LauncherForUsers.Properties.Resources.resources
+E:\УП\C-Shrap-Practice\obj\Release\LauncherForUsers.csproj.GenerateResource.cache
+E:\УП\C-Shrap-Practice\obj\Release\LauncherForUsers.csproj.CoreCompileInputs.cache
+E:\УП\C-Shrap-Practice\obj\Release\LauncherForUsers.exe
+E:\УП\C-Shrap-Practice\obj\Release\LauncherForUsers.pdb
+E:\Сама программа (без установки)\bin\Release\LauncherForUsers.exe.config
+E:\Сама программа (без установки)\bin\Release\LauncherForUsers.exe
+E:\Сама программа (без установки)\bin\Release\LauncherForUsers.pdb
+E:\Сама программа (без установки)\obj\Release\LauncherForUsers.csprojAssemblyReference.cache
+E:\Сама программа (без установки)\obj\Release\AddInfo.g.cs
+E:\Сама программа (без установки)\obj\Release\MainWindow.g.cs
+E:\Сама программа (без установки)\obj\Release\CheckIn.g.cs
+E:\Сама программа (без установки)\obj\Release\Termsofuse.g.cs
+E:\Сама программа (без установки)\obj\Release\UserAccount.g.cs
+E:\Сама программа (без установки)\obj\Release\App.g.cs
+E:\Сама программа (без установки)\obj\Release\LauncherForUsers_MarkupCompile.cache
+E:\Сама программа (без установки)\obj\Release\LauncherForUsers_MarkupCompile.lref
+E:\Сама программа (без установки)\obj\Release\AddInfo.baml
+E:\Сама программа (без установки)\obj\Release\MainWindow.baml
+E:\Сама программа (без установки)\obj\Release\CheckIn.baml
+E:\Сама программа (без установки)\obj\Release\Termsofuse.baml
+E:\Сама программа (без установки)\obj\Release\UserAccount.baml
+E:\Сама программа (без установки)\obj\Release\LauncherForUsers.g.resources
+E:\Сама программа (без установки)\obj\Release\LauncherForUsers.Properties.Resources.resources
+E:\Сама программа (без установки)\obj\Release\LauncherForUsers.csproj.GenerateResource.cache
+E:\Сама программа (без установки)\obj\Release\LauncherForUsers.csproj.CoreCompileInputs.cache
+E:\Сама программа (без установки)\obj\Release\LauncherForUsers.exe
+E:\Сама программа (без установки)\obj\Release\LauncherForUsers.pdb

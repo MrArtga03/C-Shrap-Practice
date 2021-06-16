@@ -28,10 +28,10 @@
                 </Grid>
 
                 <!--Данные о пользователе-->
-                <TextBlock FontSize="15" FontWeight="Bold">Ваш логин:</TextBlock>
+                <TextBlock Name="TextLogin" FontSize="15" FontWeight="Bold">Ваш логин:</TextBlock>
                 <TextBlock Name="LoginPlace" FontSize="15"></TextBlock>
                 <TextBlock Name="InfoText" Text="Введите дополнительные данные:" FontSize="20" FontWeight="Bold"/>
-                
+
                 <TextBlock Name="LastName" FontSize="18">Фамилия</TextBlock>
                 <TextBox Name="LastName1" FontSize="15"/>
 
@@ -40,25 +40,31 @@
 
                 <TextBlock Name="Pat" FontSize="18">Отчество</TextBlock>
                 <TextBox Name="Pat1" FontSize="15"/>
-                
+
                 <TextBlock Name="GenderText" Text="Пол" FontSize="18"/>
                 <ComboBox x:Name="Gender" Width="87" HorizontalAlignment="Left">
-                    <TextBlock>Мужской</TextBlock>
-                    <TextBlock>Женский</TextBlock>
+                    <TextBlock Name="Male">Мужской</TextBlock>
+                    <TextBlock Name="Female">Женский</TextBlock>
                 </ComboBox>
 
                 <Grid>
                     <TextBlock Name="TextNumber" Text="Число" FontSize="18" HorizontalAlignment="Left"/>
-                    <TextBlock Name="TextMonth" Text="Месяц" FontSize="18" HorizontalAlignment="Left" Margin="62,0,0,0" Width="117"/>
-                    <TextBlock Name="TextYear" Text="Год" FontSize="18" HorizontalAlignment="Left" Margin="202,0,0,0" Width="117"/>
+                    <TextBlock Name="TextMonth" Text="Месяц" FontSize="18" HorizontalAlignment="Left" Margin="80,0,0,0" Width="117"/>
+                    <TextBlock Name="TextYear" Text="Год" FontSize="18" HorizontalAlignment="Left" Margin="216,0,0,0" Width="117"/>
                 </Grid>
 
                 <Grid Margin="0 0 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="199*"/>
+                        <ColumnDefinition Width="19*"/>
+                        <ColumnDefinition Width="21*"/>
+                        <ColumnDefinition Width="32*"/>
+                        <ColumnDefinition Width="269*"/>
+                    </Grid.ColumnDefinitions>
                     <ComboBox Name="DataBorInfo" Width="55" HorizontalAlignment="Left">
                         <TextBlock>01</TextBlock>
                         <TextBlock>02</TextBlock>
                         <TextBlock>03</TextBlock>
-                        <TextBlock>04</TextBlock>
                         <TextBlock>04</TextBlock>
                         <TextBlock>05</TextBlock>
                         <TextBlock>06</TextBlock>
@@ -89,7 +95,7 @@
                         <TextBlock>31</TextBlock>
                     </ComboBox>
 
-                    <ComboBox Name="MonthBorInfo" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="120">
+                    <ComboBox Name="MonthBorInfo" HorizontalAlignment="Left" Margin="79,0,0,0" VerticalAlignment="Top" Width="120">
                         <TextBlock>01</TextBlock>
                         <TextBlock>02</TextBlock>
                         <TextBlock>03</TextBlock>
@@ -104,7 +110,7 @@
                         <TextBlock>12</TextBlock>
                     </ComboBox>
 
-                    <ComboBox Name="YearBorInfo" Width="71" HorizontalAlignment="Left" Margin="200,0,0,0">
+                    <ComboBox Name="YearBorInfo" Width="71" HorizontalAlignment="Left" Margin="16,0,0,0" Grid.ColumnSpan="4" Grid.Column="1">
                         <TextBlock>2021</TextBlock>
                         <TextBlock>2020</TextBlock>
                         <TextBlock>2019</TextBlock>
@@ -157,6 +163,16 @@
                         <TextBlock>1972</TextBlock>
                         <TextBlock>1971</TextBlock>
                         <TextBlock>1970</TextBlock>
+                        <TextBlock>1969</TextBlock>
+                        <TextBlock>1968</TextBlock>
+                        <TextBlock>1967</TextBlock>
+                        <TextBlock>1966</TextBlock>
+                        <TextBlock>1965</TextBlock>
+                        <TextBlock>1964</TextBlock>
+                        <TextBlock>1963</TextBlock>
+                        <TextBlock>1962</TextBlock>
+                        <TextBlock>1961</TextBlock>
+                        <TextBlock>1960</TextBlock>
                     </ComboBox>
                 </Grid>
 

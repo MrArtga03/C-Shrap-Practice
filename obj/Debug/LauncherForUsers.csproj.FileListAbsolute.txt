@@ -42,3 +42,26 @@ C:\Users\Smuzi\OneDrive\Рабочий стол\практика\dont-look\obj\D
 C:\Users\Smuzi\OneDrive\Рабочий стол\практика\dont-look\obj\Debug\LauncherForUsers.pdb
 C:\Users\Smuzi\OneDrive\Рабочий стол\практика\dont-look\obj\Debug\Termsofuse.g.cs
 C:\Users\Smuzi\OneDrive\Рабочий стол\практика\dont-look\obj\Debug\Termsofuse.baml
+E:\Сама программа (без установки)\bin\Debug\LauncherForUsers.exe.config
+E:\Сама программа (без установки)\bin\Debug\LauncherForUsers.exe
+E:\Сама программа (без установки)\bin\Debug\LauncherForUsers.pdb
+E:\Сама программа (без установки)\obj\Debug\LauncherForUsers.csprojAssemblyReference.cache
+E:\Сама программа (без установки)\obj\Debug\AddInfo.g.cs
+E:\Сама программа (без установки)\obj\Debug\MainWindow.g.cs
+E:\Сама программа (без установки)\obj\Debug\CheckIn.g.cs
+E:\Сама программа (без установки)\obj\Debug\Termsofuse.g.cs
+E:\Сама программа (без установки)\obj\Debug\UserAccount.g.cs
+E:\Сама программа (без установки)\obj\Debug\App.g.cs
+E:\Сама программа (без установки)\obj\Debug\LauncherForUsers_MarkupCompile.cache
+E:\Сама программа (без установки)\obj\Debug\LauncherForUsers_MarkupCompile.lref
+E:\Сама программа (без установки)\obj\Debug\AddInfo.baml
+E:\Сама программа (без установки)\obj\Debug\MainWindow.baml
+E:\Сама программа (без установки)\obj\Debug\CheckIn.baml
+E:\Сама программа (без установки)\obj\Debug\Termsofuse.baml
+E:\Сама программа (без установки)\obj\Debug\UserAccount.baml
+E:\Сама программа (без установки)\obj\Debug\LauncherForUsers.g.resources
+E:\Сама программа (без установки)\obj\Debug\LauncherForUsers.Properties.Resources.resources
+E:\Сама программа (без установки)\obj\Debug\LauncherForUsers.csproj.GenerateResource.cache
+E:\Сама программа (без установки)\obj\Debug\LauncherForUsers.csproj.CoreCompileInputs.cache
+E:\Сама программа (без установки)\obj\Debug\LauncherForUsers.exe
+E:\Сама программа (без установки)\obj\Debug\LauncherForUsers.pdb
